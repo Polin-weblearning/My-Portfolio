@@ -71,7 +71,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "RUSSEY KEO , PHNOM PENHH , CAMBODIA ",
+  address: "RUSSEY KEO , PHNOM PENH , CAMBODIA ",
   phoneNo: "+855 99 914 022 ",
   email: "athpolin2021@gmail.com",
 };
