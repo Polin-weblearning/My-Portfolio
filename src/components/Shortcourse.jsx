@@ -43,7 +43,7 @@ export default function Shortcourse() {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: 100 }}
                   transition={{ duration: 1 }}
-                  className="mt-3 text-lg/6 font-semibold   group-hover:text-gray-600"
+                  className="mt-3 text-lg/6 font-semibold bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent "
                 >
                   <a href={post.href}>
                     <span className="absolute inset-0" />
@@ -66,13 +66,12 @@ export default function Shortcourse() {
                   className="size-10 rounded-full bg-gray-50"
                 />
                 <div className="text-sm/6">
-                  <p className="font-semibold text-red-900">
+                  <p className="font-semibold ">
                     <a href={post.author.href}>
                       <span className="absolute inset-0" />
                       {post.author.name}
                     </a>
                   </p>
-                  <p className="text-red-600">{post.author.role}</p>
                 </div>
               </div>
             </article>

@@ -2,6 +2,9 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import etec from "../assets/etec.png"
+import istad from "../assets/istad.jpg"
+import kiloit from "../assets/kiloit.jpg"
 
 export const HERO_CONTENT = `
 I am a dedicated front-end developer with a strong passion for creating visually appealing and user-friendly web applications. With hands-on experience in core technologies like HTML, CSS, and JavaScript, I have mastered modern libraries and frameworks such as React.js, Tailwind CSS, and Bootstrap. I constantly strive to deliver responsive, efficient, and innovative solutions that enhance user experiences and meet business goals.`;
@@ -50,11 +53,10 @@ export const POSTS = [
     datetime: '2020-03-16',
     category: { title: 'ETEC CENTER', href: '#' },
     author: {
-      name: 'Michael Foster',
+      name: 'Education and Training Evaluation Center',
       role: 'Co-Founder / CTO',
       href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: etec,
     },
   },
   {
@@ -67,11 +69,10 @@ export const POSTS = [
     datetime: '2020-03-16',
     category: { title: 'ISTAD', href: '#' },
     author: {
-      name: 'Michael Foster',
+      name: 'Institute of Science and Technology Advanced Development ',
       role: 'Co-Founder / CTO',
       href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: istad,
     },
   },
   {
@@ -87,8 +88,7 @@ export const POSTS = [
       name: 'Michael Foster',
       role: 'Co-Founder / CTO',
       href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: kiloit,
     },
   },
   
