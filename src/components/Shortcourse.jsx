@@ -1,0 +1,84 @@
+import React from "react";
+import { POSTS } from "../constants";
+import { motion } from "framer-motion";
+
+export default function Shortcourse() {
+  return (
+    <div className=" border-b border-neutral-900 ">
+      <div className="">
+        <div className="">
+          <motion.h1
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.5 }}
+            className="my-20 text-center text-4xl"
+          >
+            Short Course
+          </motion.h1>
+        </div>
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {POSTS.map((post) => (
+            <article
+              key={post.id}
+              className="flex flex-col items-start justify-between"
+            >
+              <motion.div
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1 }}
+                className="flex items-center gap-x-4 text-xs"
+              >
+                <time dateTime={post.datetime} className="text-neutral-400">
+                  {post.date}
+                </time>
+                <a
+                  href={post.category.href}
+                  className="relative z-10 rounded-full px-3 py-1.5 font-medium  hover:bg-gray-100"
+                >
+                  {post.category.title}
+                </a>
+              </motion.div>
+              <div className="group relative">
+                <motion.h3
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: 100 }}
+                  transition={{ duration: 1 }}
+                  className="mt-3 text-lg/6 font-semibold  group-hover:text-gray-600"
+                >
+                  <a href={post.href}>
+                    <span className="absolute inset-0" />
+                    {post.title}
+                  </a>
+                </motion.h3>
+                <motion.p
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 1.5 }}
+                  className=" mt-5 text-sm text-neutral-500 line-clamp-3"
+                >
+                  {post.description}
+                </motion.p>
+              </div>
+              <div className="relative mt-8 flex items-center gap-x-4">
+                <img
+                  alt=""
+                  src={post.author.imageUrl}
+                  className="size-10 rounded-full bg-gray-50"
+                />
+                <div className="text-sm/6">
+                  <p className="font-semibold text-red-900">
+                    <a href={post.author.href}>
+                      <span className="absolute inset-0" />
+                      {post.author.name}
+                    </a>
+                  </p>
+                  <p className="text-red-600">{post.author.role}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -4,10 +4,10 @@ import "./index.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Tecnologies from "./components/Tecnologies";
-import Experience from "./components/Experiences";
+import Education from "./components/Education";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Contact1 from "./components/Contact";
+import Shortcourse from "./components/Shortcourse";
 
 
 const App = () => {
@@ -22,7 +22,8 @@ const App = () => {
         <Hero />
         <About />
         <Tecnologies/>
-        <Experience/>
+        <Education/>
+        <Shortcourse/>
         <Projects/>
         <Contact1/>
       </div>
