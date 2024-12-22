@@ -30,9 +30,9 @@ const Contact1 = () => {
 </motion.a>
 
       <motion.a
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 1 }}
+        whileInView={{opacity: 1 , xgo:0}}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{duration:0.5}}
         href={CONTACT.telegram}
         className="text-center block mb-4"
         target="_blank"
