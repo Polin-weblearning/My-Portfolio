@@ -13,7 +13,7 @@ export const ABOUT_TEXT = `I am a Junior student at Royal University of Phnom Pe
 
 export const EDUCATIONS = [
   {
-    year: "2023 - Present",
+    year: "2021 - Present",
     role: "Royal University Of Phnom Penh ",
     company: " Computer Science.",
     description: `I am currently in the fourth year, first semester, of my Bachelor's degree in Computer Science at the Royal University of Phnom Penh (RUPP). This academic journey has been more than just a series of courses—it's been an evolving process of growth, discovery, and self-development. Looking back at my experience, I realize that each year has shaped my understanding of the vast world of technology and my role within it, and how I can contribute meaningfully to the field.`,
