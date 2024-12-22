@@ -13,7 +13,7 @@ export default function Shortcourse() {
             transition={{ duration: 0.5 }}
             className="my-20 text-center text-4xl"
           >
-            Short Course
+            Short <span className="text-neutral-500"> Course</span>
           </motion.h1>
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -33,7 +33,7 @@ export default function Shortcourse() {
                 </time>
                 <a
                   href={post.category.href}
-                  className="relative z-10 rounded-full px-3 py-1.5 font-medium  hover:bg-gray-100"
+                  className="relative z-10 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text  tracking-tight text-transparent rounded-full px-3 py-1.5 font-medium  "
                 >
                   {post.category.title}
                 </a>
@@ -43,7 +43,7 @@ export default function Shortcourse() {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: 100 }}
                   transition={{ duration: 1 }}
-                  className="mt-3 text-lg/6 font-semibold  group-hover:text-gray-600"
+                  className="mt-3 text-lg/6 font-semibold   group-hover:text-gray-600"
                 >
                   <a href={post.href}>
                     <span className="absolute inset-0" />
