@@ -9,7 +9,7 @@ import kiloit from "../assets/kiloit.jpg"
 export const HERO_CONTENT = `
 I am a dedicated front-end developer with a strong passion for creating visually appealing and user-friendly web applications. With hands-on experience in core technologies like HTML, CSS, and JavaScript, I have mastered modern libraries and frameworks such as React.js, Tailwind CSS, and Bootstrap. I constantly strive to deliver responsive, efficient, and innovative solutions that enhance user experiences and meet business goals.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 2 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am currently in my 4th year at Royal University of Phnom Penh, pursuing a degree in Computer Science. Alongside my studies, I work as a Front-End developer, focusing on building responsive and intuitive web applications. I continually strive to learn new technologies and improve my skills. My goal is to contribute to impactful projects that make a difference.`;
 
 export const EDUCATIONS = [
   {
@@ -49,7 +49,7 @@ export const POSTS = [
     href: '#',
     description:
       'In 2022, I explored the foundational aspects of programming, focusing on C and C++. During this time, I developed an understanding of core programming concepts such as variables, data types, loops, conditionals, and functions. I also delved into object-oriented programming (OOP), learning key principles such as encapsulation, inheritance, polymorphism, and abstraction. This experience provided me with a solid base in problem-solving and programming logic, enabling me to write structured and efficient code.',
-    date: 'Mar 16, 2020',
+    date: 'May 16, 2022',
     datetime: '2020-03-16',
     category: { title: 'ETEC CENTER', href: '#' },
     author: {
@@ -126,7 +126,8 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "RUSSEY KEO , PHNOM PENH , CAMBODIA ",
-  phoneNo: "+855 99 914 022 ",
+  address: "RUSSEY KEO, PHNOM PENH, CAMBODIA",
+  phoneNo: "+855 99 914 022",
+  telegram: "https://t.me/Polin_Ath",
   email: "athpolin2021@gmail.com",
 };

@@ -18,7 +18,7 @@ const Hero = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="border-b border-neutral-900 pb-4 lg:mb-35"
+      className="border-neutral-900 pb-4 lg:mb-35"
     >
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">

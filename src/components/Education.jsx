@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className=" border-neutral-900 pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -37,14 +37,7 @@ const Education = () => {
                 </span>
               </h6>
               <p className="mb-4 text-neutral-500">{Education.description}</p>
-              {Education.technologies.map((tech, index) => (
-                <span
-                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-                  key={index}
-                >
-                  {tech}
-                </span>
-              ))}
+             
             </motion.div>
           </div>
         ))}

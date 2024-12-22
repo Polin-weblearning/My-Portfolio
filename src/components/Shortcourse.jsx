@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 
 export default function Shortcourse() {
   return (
-    <div className=" border-b border-neutral-900 ">
-      <div>
-        <div className="">
+    <div className="border-neutral-900 ">
+        <div>
           <motion.h1
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
@@ -77,7 +76,6 @@ export default function Shortcourse() {
             </article>
           ))}
         </div>
-      </div>
     </div>
   );
 }
