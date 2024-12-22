@@ -81,11 +81,11 @@ export const POSTS = [
     href: '#',
     description:
       'During my internship at kiloIT, I worked on building the "Kilo Health" website using ReactJS. The website is designed to function like a hospital platform, featuring a directory of doctors and various healthcare-related services. My responsibilities included developing dynamic, responsive components, integrating API data for doctor profiles and services, and ensuring smooth user navigation across the platform. I focused on creating an intuitive UI/UX that made it easy for users to find healthcare professionals and access services. This hands-on experience allowed me to apply my ReactJS knowledge while working in a real-world healthcare setting.',
-    date: 'Mar 16, 2020',
+    date: 'JULY 26, 2024',
     datetime: '2020-03-16',
-    category: { title: 'KILO IT', href: '#' },
+    category: { title: 'KILO IT (INTERNSHIP)', href: '#' },
     author: {
-      name: 'Michael Foster',
+      name: 'KILO IT',
       role: 'Co-Founder / CTO',
       href: '#',
       imageUrl: kiloit,

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Shortcourse() {
   return (
     <div className=" border-b border-neutral-900 ">
-      <div className="">
+      <div>
         <div className="">
           <motion.h1
             whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function Shortcourse() {
             Short <span className="text-neutral-500"> Course</span>
           </motion.h1>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {POSTS.map((post) => (
             <article
               key={post.id}

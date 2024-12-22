@@ -39,7 +39,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6  "
             >
               {HERO_CONTENT}
             </motion.p>
