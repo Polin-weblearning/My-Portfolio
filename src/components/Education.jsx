@@ -37,7 +37,6 @@ const Education = () => {
                 </span>
               </h6>
               <p className="mb-4 text-neutral-500">{Education.description}</p>
-             
             </motion.div>
           </div>
         ))}
