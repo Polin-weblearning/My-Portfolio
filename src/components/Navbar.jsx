@@ -8,21 +8,14 @@ const Navbar = () => {
   return (
     <nav className=" mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <a
-          href="/"
-          className="rounded-full p-2"
-        >
-          <img
-            className="mx-2 w-20 hover:scale-110 "
-            src={Logo}
-            alt="logo"
-          />
+        <a href="/" className="rounded-full p-2">
+          <img className="mx-2 w-20 hover:scale-110 " src={Logo} alt="logo" />
         </a>
       </div>
 
       <div className="icon m-8 flex items-center gap-3 text-3xl">
         <a
-          href="https://www.linkedin.com/in/ath-polin-218069342"
+          href="https://www.linkedin.com/in/ath-polin-479bb52b0/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
