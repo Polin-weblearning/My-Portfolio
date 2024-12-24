@@ -38,6 +38,7 @@ const Hero = () => {
   };
 
   return (
+    <>
     <motion.div
       initial="hidden"
       animate="visible"
@@ -91,6 +92,12 @@ const Hero = () => {
         </div>
       </div>
     </motion.div>
+    <motion.h1
+      whileInView={{opacity: 1 , y:0}}
+      initial={{ opacity: 0, y: 100 }}
+      transition={{duration:0.5}}
+      className="bebas-neue-regular  my-2 text-center text-xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl  text-transparent">"Click the image, and make sure your volume is up to hear the magic!"</motion.h1>
+    </>
   );
 };
 
