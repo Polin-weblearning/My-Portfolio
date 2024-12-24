@@ -11,8 +11,6 @@ const container = (delay) => ({
   },
 });
 
-
-
 const Hero = () => {
   return (
     <motion.div
@@ -20,12 +18,6 @@ const Hero = () => {
       animate="visible"
       className="border-neutral-900 pb-4 lg:mb-35"
     >
-      <video
-        autoPlay
-        loop
-        muted
-        className="rotatd-180 absolute top[-340px] h-full w-full left-0 z-[1] object-cover"
-        src=""> <source src="/blackhole.webm " type="video/webm" /></video>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
