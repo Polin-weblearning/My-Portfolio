@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { HERO_CONTENT } from "./../constants/index";
 import profilePic from "../assets/polin.png";
 import { motion } from "framer-motion";
@@ -12,6 +13,14 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const [isDeveloper, setIsDeveloper] = useState(true); 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsDeveloper((prev) => !prev); 
+    }, 3000);
+    return () => clearInterval(interval); 
+  }, []);
+
   return (
     <motion.div
       initial="hidden"
@@ -27,17 +36,23 @@ const Hero = () => {
             >
               Ath Polin
             </motion.h1>
+
             <motion.span
-              variants={container(0.5)}
+              key={isDeveloper ? "developer" : "designer"} 
+              initial={{ opacity: 0, y: 50 }}  
+              animate={{ opacity: 1, y: 0 }}  
+              exit={{ opacity: 0, y: -50 }} 
+              transition={{ duration: 1 }}
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Front-End Devoloper
+              {isDeveloper ? "Front-End Developer" : "UX/UI Designer"}
             </motion.span>
+
             <motion.p
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="my-2 max-w-xl py-6  "
+              className="my-2 max-w-xl py-6"
             >
               {HERO_CONTENT}
             </motion.p>
