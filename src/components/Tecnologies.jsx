@@ -71,7 +71,7 @@ const Tecnologies = () => {
         </motion.div>
        
         <motion.div
-          variants={iconVariants(6)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 ph-4"
@@ -84,7 +84,7 @@ const Tecnologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 ph-4"
         >
-        <RiTailwindCssFill  className="text-7xl text-green-500" />
+        <RiTailwindCssFill  className="text-7~xl text-green-500" />
         </motion.div>
       </motion.div>
     </div>

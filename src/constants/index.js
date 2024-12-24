@@ -6,10 +6,15 @@ import etec from "../assets/etec.png"
 import istad from "../assets/istad.jpg"
 import kiloit from "../assets/kiloit.jpg"
 
+
+
 export const HERO_CONTENT = `
 I am a dedicated front-end developer with a strong passion for creating visually appealing and user-friendly web applications. With hands-on experience in core technologies like HTML, CSS, and JavaScript, I have mastered modern libraries and frameworks such as React.js, Tailwind CSS, and Bootstrap. I constantly strive to deliver responsive, efficient, and innovative solutions that enhance user experiences and meet business goals.`;
 
 export const ABOUT_TEXT = `I am a Junior student at Royal University of Phnom Penh, pursuing a degree in Computer Science. Alongside my studies, I work as a Front-End developer, focusing on building responsive and intuitive web applications. I continually strive to learn new technologies and improve my skills. My goal is to contribute to impactful projects that make a difference.`;
+
+
+
 
 export const EDUCATIONS = [
   {
@@ -41,6 +46,8 @@ export const EDUCATIONS = [
   //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
   // },
 ];
+
+
 
 export const POSTS = [
   {

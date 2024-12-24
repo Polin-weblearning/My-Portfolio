@@ -20,19 +20,19 @@ const Contact1 = () => {
         {CONTACT.address}
       </motion.p>
       <motion.a
-  whileInView={{ opacity: 1, y: 0 }}
-  initial={{ opacity: 0, y: -100 }}
-  transition={{ duration: 1 }}
-  href={`tel:${CONTACT.phoneNo}`}
-  className="my-4 text-center block"
->
-  {CONTACT.phoneNo}
-</motion.a>
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        href={`tel:${CONTACT.phoneNo}`}
+        className="my-4 text-center block"
+      >
+        {CONTACT.phoneNo}
+      </motion.a>
 
       <motion.a
-        whileInView={{opacity: 1 , y:0}}
+        whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
-        transition={{duration:0.5}}
+        transition={{ duration: 0.5 }}
         href={CONTACT.telegram}
         className="text-center block mb-4"
         target="_blank"
