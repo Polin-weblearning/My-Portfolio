@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact1 from "./components/Contact";
 import Shortcourse from "./components/Shortcourse";
 import { Analytics } from "@vercel/analytics/react";
+import Sound from "./components/Sound";
 
 const App = () => {
   return (

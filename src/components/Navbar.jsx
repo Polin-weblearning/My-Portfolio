@@ -1,5 +1,6 @@
 import Logo from "../assets/mylogo.png";
 import { socialLinks } from "../constants/socialLinks";
+import Sound from "./Sound";
 
 const Navbar = () => {
   return (
@@ -9,8 +10,9 @@ const Navbar = () => {
           <img className="mx-2 w-20 hover:scale-110" src={Logo} alt="logo" />
         </a>
       </div>
-
+      <Sound/>
       <div className="icon m-8 flex items-center gap-3 text-3xl">
+        
         {socialLinks.map(({ href, icon: Icon, label }, index) => (
           <a
             key={index}
