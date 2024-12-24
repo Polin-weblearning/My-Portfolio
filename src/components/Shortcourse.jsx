@@ -53,7 +53,7 @@ export default function Shortcourse() {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: -100 }}
                   transition={{ duration: 1.5 }}
-                  className=" mt-5 text-sm text-neutral-500 line-clamp-3"
+                  className=" mt-5 text-sm text-neutral-500 line-clamp-4"
                 >
                   {post.description}
                 </motion.p>
