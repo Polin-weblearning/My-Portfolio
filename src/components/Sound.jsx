@@ -31,14 +31,14 @@ const Sound = () => {
 
   return (
     <div className="">
-      <button
+      <a
         onClick={togglePlay}
-        className={`px-6 py-3 text-white ${
+        className={`${
           isPlaying ? "bg-red-500 hover:bg-red-600" : "bg-cyan-500 hover:bg-cyan-600"
         } rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all`}
       >
         {isPlaying ? "Pause Sound" : "Play Sound"}
-      </button>
+      </a>
     </div>
   );
 };

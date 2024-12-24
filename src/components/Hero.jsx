@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { HERO_CONTENT } from "./../constants/index";
 import profilePic from "../assets/polin.png";
 import { motion } from "framer-motion";
+import Sounds from "../assets/audio.mp3"; // Import audio file
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -13,13 +14,28 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
-  const [isDeveloper, setIsDeveloper] = useState(true); 
+  const [isDeveloper, setIsDeveloper] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false); // State to track play/pause
+  const audioRef = useRef(new Audio(Sounds)); // Reference for audio
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsDeveloper((prev) => !prev); 
+      setIsDeveloper((prev) => !prev);
     }, 2000);
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
+
+  const togglePlayPause = () => {
+    const audio = audioRef.current;
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
 
   return (
     <motion.div
@@ -38,10 +54,10 @@ const Hero = () => {
             </motion.h1>
 
             <motion.span
-              key={isDeveloper ? "developer" : "designer"} 
-              initial={{ opacity: 0, y: -50 }}  
-              animate={{ opacity: 1, y: 0 }}  
-              exit={{ opacity: 0, y: -50 }} 
+              key={isDeveloper ? "developer" : "designer"}
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 1 }}
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
@@ -65,7 +81,12 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="flex justify-center"
           >
-            <img src={profilePic} alt="ath polin" />
+            <img
+              src={profilePic}
+              alt="ath polin"
+              className="cursor-pointer"
+              onClick={togglePlayPause} // Toggle audio on image click audio play
+            />
           </motion.div>
         </div>
       </div>
