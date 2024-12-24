@@ -17,7 +17,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsDeveloper((prev) => !prev); 
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval); 
   }, []);
 
@@ -39,7 +39,7 @@ const Hero = () => {
 
             <motion.span
               key={isDeveloper ? "developer" : "designer"} 
-              initial={{ opacity: 0, y: 50 }}  
+              initial={{ opacity: 0, y: -50 }}  
               animate={{ opacity: 1, y: 0 }}  
               exit={{ opacity: 0, y: -50 }} 
               transition={{ duration: 1 }}
