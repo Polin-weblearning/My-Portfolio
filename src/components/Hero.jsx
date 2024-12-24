@@ -2,7 +2,6 @@ import { HERO_CONTENT } from "./../constants/index";
 import profilePic from "../assets/polin.png";
 import { motion } from "framer-motion";
 
-
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -13,6 +12,7 @@ const container = (delay) => ({
 });
 
 
+
 const Hero = () => {
   return (
     <motion.div
@@ -20,6 +20,12 @@ const Hero = () => {
       animate="visible"
       className="border-neutral-900 pb-4 lg:mb-35"
     >
+      <video
+        autoPlay
+        loop
+        muted
+        className="rotatd-180 absolute top[-340px] h-full w-full left-0 z-[1] object-cover"
+        src=""> <source src="/blackhole.webm " type="video/webm" /></video>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -33,7 +39,7 @@ const Hero = () => {
               variants={container(0.5)}
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Front-End Developer
+              Front-End Devoloper
             </motion.span>
             <motion.p
               whileInView={{ opacity: 1, x: 0 }}
@@ -46,11 +52,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <motion.div 
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          className="flex justify-center">
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
+          >
             <img src={profilePic} alt="ath polin" />
           </motion.div>
         </div>

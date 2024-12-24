@@ -1,8 +1,8 @@
 import Logo from "../assets/mylogo.png";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -33,13 +33,13 @@ const Navbar = () => {
           <FaFacebook />
         </a>
         <a
-          href="https://www.instagram.com/http_pinnnnn.lo/profilecard/?igsh=MXhvYjc0bHEzcWtkag=="
+          href="https://x.com/athpolin?s=21"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
           className="hover:text-cyan-300 transition-colors hover:scale-110"
         >
-          <FaInstagram />
+         <FaXTwitter />
         </a>
         <a
           href="https://github.com/Polin-weblearning"
