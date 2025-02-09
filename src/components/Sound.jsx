@@ -7,7 +7,6 @@ const Sound = () => {
 
   const togglePlay = () => {
     const audio = audioRef.current;
-
     if (isPlaying) {
       audio.pause(); 
     } else {
@@ -33,9 +32,6 @@ const Sound = () => {
     <div className="">
       <a
         onClick={togglePlay}
-        className={`${
-          isPlaying ? "bg-red-500 hover:bg-red-600" : "bg-cyan-500 hover:bg-cyan-600"
-        } rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all`}
       >
         {isPlaying ? "Pause Sound" : "Play Sound"}
       </a>

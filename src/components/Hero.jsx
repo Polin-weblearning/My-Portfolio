@@ -86,7 +86,7 @@ const Hero = () => {
                 src={profilePic}
                 alt="ath polin"
                 className="cursor-pointer"
-                onClick={togglePlayPause} // Toggle audio on image click audio play
+                onClick={togglePlayPause} 
               />
             </motion.div>
             <motion.h1
