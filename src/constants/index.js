@@ -27,7 +27,7 @@ export const EDUCATIONS = [
   {
     year: "2018 - 2021",
     role: "Preah Sihanouk ",
-    company: " High school",
+    company: " High School",
     description: `Before embarking on my journey at the Royal University of Phnom Penh, I completed my high school education at Preah Sihanouk High School in Kampong Cham from 2018 to 2021. During these three years, I experienced significant personal and academic growth that laid the foundation for my pursuit of a degree in Computer Science.`,
     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
   },
