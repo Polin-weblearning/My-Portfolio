@@ -5,6 +5,7 @@ import project4 from "../assets/projects/project-4.jpg";
 import etec from "../assets/etec.png"
 import istad from "../assets/istad.jpg"
 import kiloit from "../assets/kiloit.jpg"
+import travel from "../assets/travelport.jpg"
 
 
 
@@ -98,6 +99,23 @@ export const POSTS = [
       imageUrl: kiloit,
     },
   },
+  {
+    id: 4,
+    title: 'Galileo Airline Ticketing Course',
+    href: '#',
+    description:
+      'Completed hands-on training in the Galileo Global Distribution System (GDS), gaining practical experience in airline ticket reservations. Learned how to search for flights, select seats, calculate fares, issue tickets, and manage passenger name records (PNR). Developed skills in modifying itineraries and understanding fare structures. Gained knowledge of airline industry codes, travel policies, and customer service practices.',
+    date: 'FEB 14, 2025',
+    datetime: '2020-03-16',
+    category: { title: 'The T Club Travelport Partner Cambodia', href: '#' },
+    author: {
+      name: 'Travelport Partner Cambodia',
+      role: 'Co-Founder / CTO',
+      href: '#',
+      imageUrl: travel,
+    },
+  },
+ 
   
 ];
 

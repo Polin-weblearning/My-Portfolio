@@ -73,6 +73,7 @@ export default function Shortcourse() {
                   </p>
                 </div>
               </div>
+              
             </article>
           ))}
         </div>
