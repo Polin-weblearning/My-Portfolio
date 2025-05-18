@@ -6,6 +6,7 @@ import etec from "../assets/etec.png"
 import istad from "../assets/istad.jpg"
 import kiloit from "../assets/kiloit.jpg"
 import travel from "../assets/travelport.jpg"
+import tp from "../assets/tovtrip.jpg"
 
 
 
@@ -63,7 +64,7 @@ export const POSTS = [
     author: {
       name: 'Education and Training Evaluation Center',
       role: 'Co-Founder / CTO',
-      href: '#',
+      href: 'https://www.schoolandcollegelistings.com/KH/Phnom-Penh/113904153397942/ETEC-Center--%E1%9E%98%E1%9E%87%E1%9F%92%E1%9E%88%E1%9E%98%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%9B%E1%9E%94%E1%9E%8E%E1%9F%92%E1%9E%8F%E1%9E%BB%E1%9F%87%E1%9E%87%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%89-I.T',
       imageUrl: etec,
     },
   },
@@ -79,7 +80,7 @@ export const POSTS = [
     author: {
       name: 'Institute of Science and Technology Advanced Development ',
       role: 'Co-Founder / CTO',
-      href: '#',
+      href: 'https://cstad.edu.kh',
       imageUrl: istad,
     },
   },
@@ -95,7 +96,7 @@ export const POSTS = [
     author: {
       name: 'KILO IT',
       role: 'Co-Founder / CTO',
-      href: '#',
+      href: 'https://kiloit.com/',
       imageUrl: kiloit,
     },
   },
@@ -111,8 +112,24 @@ export const POSTS = [
     author: {
       name: 'Travelport Partner Cambodia',
       role: 'Co-Founder / CTO',
-      href: '#',
+      href: 'https://www.travelport.com/contact',
       imageUrl: travel,
+    },
+  },
+  {
+    id: 4,
+    title: 'Tovtrip.com',
+    href: '#',
+    description:
+      'During my internship at Tovtrip, I was involved in the daily operational tasks of managing the tourism platform. My responsibilities included monitoring booking activities, assisting with hotel and airline partner coordination, and supporting customer service operations. I helped update and manage property listings, ensured booking information accuracy, and assisted with resolving customer inquiries. I also worked closely with the support and product teams to ensure smooth operation of the app’s features. This experience enhanced my understanding of operational workflows in the travel tech industry and improved my communication and problem-solving skills in a real-time environment.',
+    date: 'MAR 06, 2025',
+    datetime: '2020-03-16',
+    category: { title: 'Tovtrip Tourism Super App', href: '#' },
+    author: {
+      name: 'Tovtrip',
+      role: 'Co-Founder / CTO',
+      href: 'https://tovtrip.com/',
+      imageUrl: tp,
     },
   },
  
