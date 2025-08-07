@@ -8,6 +8,10 @@ import aboutImg6 from "../assets/aboutimg6.jpg";
 import aboutImg7 from "../assets/aboutimg7.jpg";
 import aboutImg8 from "../assets/aboutimg8.jpg";
 import aboutImg9 from "../assets/aboutimg9.jpg";
+import aboutImg10 from "../assets/aboutimg10.jpg";
+import aboutImg11 from "../assets/aboutimg11.jpg";
+import aboutImg12 from "../assets/aboutimg12.jpg";
+import aboutImg13 from "../assets/aboutimg13.jpg";
 const images = [
   aboutImg1,
   aboutImg4,
@@ -17,6 +21,10 @@ const images = [
   aboutImg7,
   aboutImg8,
   aboutImg9,
+  aboutImg10,
+  aboutImg11,
+  aboutImg12,
+  aboutImg13,
 ];
 
 const Design = () => {
