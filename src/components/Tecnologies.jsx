@@ -108,7 +108,7 @@ const Tecnologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 ph-4"
         >
-          <FaGithub className="text-7xl" style={{ color: "#181717" }} />
+          <FaGithub className="text-7xl" style={{ color: "#181717" }} /> 
         </motion.div>
         <motion.div
           variants={iconVariants(4)}

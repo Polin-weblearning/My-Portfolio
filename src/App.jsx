@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact1 from "./components/Contact";
 import Shortcourse from "./components/Shortcourse";
 import { Analytics } from "@vercel/analytics/react";
+import Design from "./components/Design";
 
 const App = () => {
   
@@ -24,6 +25,7 @@ const App = () => {
         <Tecnologies />
         <Education />
         <Shortcourse />
+        <Design/>
         <Projects />
         <Contact1 />
       </div>
