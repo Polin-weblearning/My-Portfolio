@@ -12,6 +12,9 @@ import aboutImg10 from "../assets/aboutimg10.jpg";
 import aboutImg11 from "../assets/aboutimg11.jpg";
 import aboutImg12 from "../assets/aboutimg12.jpg";
 import aboutImg13 from "../assets/aboutimg13.jpg";
+import aboutImg14 from "../assets/aboutimg14.jpg";
+import aboutImg15 from "../assets/aboutimg15.jpg";
+
 const images = [
   aboutImg1,
   aboutImg4,
@@ -25,6 +28,8 @@ const images = [
   aboutImg11,
   aboutImg12,
   aboutImg13,
+  aboutImg14,
+  aboutImg15,
 ];
 
 const Design = () => {
@@ -41,43 +46,39 @@ const Design = () => {
         My Designs
       </motion.h1>
 
-      <div className="border-neutral-900 pb-4">
-
-
-        {/* ✅ Image Grid (2 on mobile, 3 on large screens) */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 px-4">
-          {images.map((img, index) => (
-            <motion.div
-              key={index}
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="cursor-pointer"
-              onClick={() => setSelectedImage(img)}
-            >
-              <img
-                src={img}
-                alt={`about-${index}`}
-                className="rounded-2xl w-full object-cover shadow-md hover:scale-105 transition-transform duration-200"
-              />
-            </motion.div>
-          ))}
-        </div>
-
-        {/* ✅ Modal for full image */}
-        {selectedImage && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
-            onClick={() => setSelectedImage(null)}
+      {/* ✅ Image Grid */}
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+        {images.map((img, index) => (
+          <motion.div
+             whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -100 }}
+              transition={{ duration: 1 }}
+            className="cursor-pointer"
+            onClick={() => setSelectedImage(img)}
           >
             <img
-              src={selectedImage}
-              alt="Full View"
-              className="max-w-full max-h-full rounded-lg shadow-lg"
+              src={img}
+              alt={`design-${index}`}
+              loading="lazy"
+              className="rounded-2xl w-full object-cover shadow-md hover:scale-105 transition-transform duration-200"
             />
-          </div>
-        )}
+          </motion.div>
+        ))}
       </div>
+
+      {/* ✅ Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            alt="Full View"
+            className="max-w-full max-h-full rounded-lg shadow-lg"
+          />
+        </div>
+      )}
     </div>
   );
 };
