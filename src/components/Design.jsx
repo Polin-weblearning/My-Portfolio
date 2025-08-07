@@ -6,6 +6,8 @@ import aboutImg3 from "../assets/aboutimg3.jpg";
 import aboutImg5 from "../assets/aboutimg5.jpg";
 import aboutImg6 from "../assets/aboutimg6.jpg";
 import aboutImg7 from "../assets/aboutimg7.jpg";
+import aboutImg8 from "../assets/aboutimg8.jpg";
+import aboutImg9 from "../assets/aboutimg9.jpg";
 const images = [
   aboutImg1,
   aboutImg4,
@@ -13,6 +15,8 @@ const images = [
   aboutImg5,
   aboutImg6,
   aboutImg7,
+  aboutImg8,
+  aboutImg9,
 ];
 
 const Design = () => {
@@ -30,9 +34,7 @@ const Design = () => {
       </motion.h1>
 
       <div className="border-neutral-900 pb-4">
-        <h1 className="my-20 text-center text-4xl">
-          About<span className="text-neutral-500"> Me</span>
-        </h1>
+
 
         {/* ✅ Image Grid (2 on mobile, 3 on large screens) */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 px-4">
